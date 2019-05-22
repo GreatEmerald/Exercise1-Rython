@@ -1,0 +1,10 @@
+language: r
+  
+os: 
+  - linux
+
+install:
+  - Rscript -e 'install.packages("testthat")'
+
+script:
+  - Rscript ./test/test.R
