@@ -98,10 +98,6 @@ echo
 
 let EXSTAT=$GITERRORS+$STRUCERRORS
 
-
-# Run R tests on code
-Rscript ./test/test.R
-
 exit $EXSTAT
 
 

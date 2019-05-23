@@ -1,10 +1,15 @@
-language: r
-  
-os: 
-  - linux
+matrix:
+  include:
+  - name: "Git use and project structure"
+    language: bash
+    os: linux
+    script:
+    - bash ./test/git_use.sh
 
-install:
-  - Rscript -e 'install.packages("testthat")'
-
-script:
-  - Rscript ./test/test.R
+  - name: "R code tests"
+    language: r 
+    os: linux
+    install:
+    - Rscript -e 'install.packages("testthat")'
+    script:
+    - Rscript ./test/test.R
