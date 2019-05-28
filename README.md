@@ -1,22 +1,20 @@
-# Auto testing exercise 1
-Demo for auto testing exercise 1 geoscripting
+# Exercise1-Solution
+The solution to exercise 1. This will not be shared with the students (beforehand). The solution should pass all tests.
+
+
+[![Build Status](https://travis-ci.com/PTOoster/auto-testing-exercise1.svg?branch=master)](https://travis-ci.com/PTOoster/auto-testing-exercise1)
 
 # Lesson 1, exercise 1
 
 ## Your task
-Write a simple function is.leap in the file R/LeapYear.R, which calculates whether or not a year is a leap year. Use control flow, and provide some examples of how the function works in the file main.R. The function should behave as follows:
+Write a simple function ageCalculator in a file R/ageCalculator.R. The function should take a year as input, and return the age of someone born in that year. Use control flow, and provide some examples of how the function works in the file main.R. The function should behave as follows:
 
-    > is.leap(2000)
-    [1] TRUE
+    > ageCalculator(1995)
+    [1] 24
 
-    > is.leap(1580)
-    Warning message:
-    In is.leap(year): 1580 was before the Gregorian calendar was in use, using proleptic Gregorian calendar
-    [1] TRUE
+    > ageCalculator(2050)
+    Error: You aren't born yet
 
-    > is.leap(2002)
-    [1] FALSE
-
-    > is.leap('john') #should throw an error 
-    Error: argument of class numeric expected
+    > is.leap('how old am I?')
+    Error: x must be of class numeric
 

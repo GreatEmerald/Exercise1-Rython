@@ -1,4 +1,9 @@
 #!/bin/bash
+# Geoscripting 2020 
+# Lesson 1, Exercise 1
+# Age calculator
+# Tests
+# 28/05/2019
 
 ## Test Git use ##
 
@@ -65,14 +70,14 @@ else
 fi
 
 # Check if required function is present in R directory
-FUNC=$(find ./R/ -maxdepth 1 -name "LeapYear.[rR]" | wc -l | sed 's/ //g')
+FUNC=$(find ./R/ -maxdepth 1 -name "ageCalculator.[rR]" | wc -l | sed 's/ //g')
 
 if [[ FUNC -ne 1 ]]
 then
- echo "No script LeapYear.R found in R folder"
+ echo "No script ageCalculator.R found in R folder"
  STRUCERRORS+=1
 else
- echo "LeapYear.R file found and placed correctly" 
+ echo "ageCalculator.R file found and placed correctly" 
 fi
 
 # Check if multiple R scripts present main directory
