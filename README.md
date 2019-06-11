@@ -1,9 +1,3 @@
-# Exercise1-Solution
-The solution to exercise 1. This will not be shared with the students (beforehand). The solution should pass all tests.
-
-
-[![Build Status](https://travis-ci.com/PTOoster/auto-testing-exercise1.svg?branch=master)](https://travis-ci.com/PTOoster/auto-testing-exercise1)
-
 # Lesson 1, exercise 1
 
 ## Your task
