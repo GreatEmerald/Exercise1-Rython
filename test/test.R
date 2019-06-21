@@ -11,7 +11,7 @@ library('testthat')
 # Source main.r
 cat('Running main.R...\n')  
 cat('Log of main.R:\n\n')
-source('main.R')
+try(source('main.R'))
 
 cat('\nmain.R runs without interruption\n')
 
@@ -27,6 +27,9 @@ for (fun in fun_req){
   new_fun <- paste0("^", fun, "$")
   if (Vectorize(grepl, USE.NAMES = FALSE)(new_fun, fun_found) == FALSE){
     stop(paste0("No function found called ", fun, ". Aborting tests."))
+  }
+  else{
+    cat(paste0('\nFunction ', fun, ' successfully created\n'))
   }
 }
 
