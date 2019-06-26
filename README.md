@@ -11,7 +11,7 @@ Write a simple function `ageCalculator` in a file `R/ageCalculator.R`. The funct
     > ageCalculator(2050)
     Error: You aren't born yet
 
-    > is.leap('how old am I?')
+    > ageCalculator('how old am I?')
     Error: x must be of class numeric
 
 ### Requirements

@@ -8,6 +8,7 @@
 # Import packages
 
 # Source functions
+source('R/ageCalculator')
 
 # Demonstrate function
 
