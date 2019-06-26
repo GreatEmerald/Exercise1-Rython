@@ -69,3 +69,8 @@ expect_error(ageCalculator(2030))
 
 cat("\nAll warnings and errors well-handled\n")
 cat("\nDone testing\n")
+
+if (passed_true != 3){
+  stop("Build failed: not all ages correctly calculated")
+}
+
